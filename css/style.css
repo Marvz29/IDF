@@ -640,6 +640,7 @@ a {
 .consortium--row{
     text-align: center;
     padding: 80px;
+    width: 500px;
 }
 
 /**Footer**/
@@ -653,6 +654,9 @@ a {
  color: #fff;
  padding: 30px;
  margin: 0 auto ;
+}
+.footer--logo {
+    width: 500px;
 }
 
 .footer--logo img {
@@ -754,5 +758,23 @@ form .subscribe--btn:hover{
 @media (max-width: 750px) {
     .footer--hr {
         display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cons--logo img {
+        align-items: center;
+        width: 320px;
+    }
+    
+    .consortium--row{
+        text-align: center;
+        padding: 80px 20px;
+        width: 500px;
     }
 }
