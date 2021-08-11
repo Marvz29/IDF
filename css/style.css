@@ -31,7 +31,7 @@
     .title {
         color: #0054a6 ;
         font-family: 'Roboto', sans-serif;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: bold;
         padding: 40px 0px 0px;
         text-align: center;
@@ -212,7 +212,7 @@ a {
     background-color: #0054a6;
     padding: 10px 20px;
     font-size: 1.5rem;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
     border-radius: 50px; 
 }
 
@@ -249,7 +249,7 @@ a {
 
     .banner--content h1 {
         font-family: 'Roboto', sans-serif;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: bold;
         padding-top: 5px;
         padding-bottom: 30px;
@@ -258,6 +258,17 @@ a {
 
     .banner--content .banner--text {
         display: none;
+    }
+
+    .banner--content .hero--btn {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #0054a6;
+        padding: 8px 10px;
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+        border-radius: 50px; 
     }
     
 }
@@ -394,6 +405,7 @@ a {
     text-decoration: none;
     color: #fff;
 }
+
 @media (max-width: 1150px) {
     .event--content--wrapper {
         display: flex;
@@ -422,13 +434,21 @@ a {
         margin: 0px 5px;
     }
 
-    .event----content--img img {
-        height: 100px;
-        width: 200px;
+    .event--content--img img {
+        height: Auto;
+        width: 100%;
+    }
+
+    .event--content--text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .event--content--text h3 {
+        font-size: 1.8rem;
     }
 
     .event--item--container {
-        padding: 0px 20px 0px;
         text-align: center;
     }
 
@@ -640,7 +660,6 @@ a {
 .consortium--row{
     text-align: center;
     padding: 80px;
-    width: 500px;
 }
 
 /**Footer**/
@@ -782,4 +801,557 @@ form .subscribe--btn:hover{
         flex: 0 0 auto;
         width: 100%
     }
+}
+
+
+/***Single Page***/
+
+.post--breadcrum {
+    margin-top: 20px;
+    background-color:#0054a6;
+    width: 250px;
+    height: auto;
+}
+
+.crum--hr {
+    font-size: 1.5rem;
+    font-family: "Roboto",sans-serif;
+    color: #fff;
+    display: inline-block;
+    padding: 0 5px;
+    transform: rotate(25deg)
+}
+
+.back--to--home {
+    margin: 5px;
+}
+
+.post--breadcrum .back--to--home a, .fa-home, .all--events a, .crum--event a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.post--breadcrum a:hover{
+    color: #00ff00;
+     transition: .5s;
+}
+
+.event--flyer--container, .event--details {
+    margin-top: 30px;
+}
+
+.event--flyer--container {
+    float: left;
+    width: 55%;
+}
+
+.event--flyer--container img {
+    width: 100%;
+}
+
+.event--content {
+    border: solid 1px #dadada;
+    margin-top: 20px;
+}
+
+.event--content h1 {
+    padding: 20px 20px 5px;
+    font-family: "Roboto",sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #0054a6;
+}
+
+.event--content p {
+    padding: 10px 20px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.5rem;
+}
+
+.event--details {
+    float: left;
+    width: 20%;
+}
+
+.event--details .logo--adfiap, .logo--idf, .event--fee, .event--calendar, .event--clock {
+    text-align: center;
+    margin:  0px 10px 10px;
+    border: solid 1px #dadada;
+}
+
+.event--details .logo--adfiap img, .logo--idf img {
+    width: 70%;
+}
+
+.event--details .event--fee, .event--calendar, .event--clock, .event--registration--btn {
+    height: auto;
+    overflow: hidden;
+}
+
+.event--details .event--fee h3 {
+   text-transform: uppercase;
+   font-family: "Roboto", sans-serif;
+   font-size: 2.5rem;
+   font-weight: 900;
+   color: #ff0000;
+}
+
+.event--details .event--fee p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 10px;
+    color: #0054a6;
+ }
+
+.event--details, .calendar--date, .clock--time {
+    float: left;
+}
+
+.event--details .event--calendar h2, .event--clock h2 {
+    color: #0054a6;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.event--details .event--calendar p:nth-child(1), .event--clock p:nth-child(1) {
+    color: #0054a6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.event--details .event--calendar .calendar--date, .event--clock .clock--time{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.event--details .event--calendar .calendar--date p, .event--clock .clock--time p{
+    color: #0054a6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    padding: 0 10px;
+}
+
+.event--details .event--registration--btn {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 10px;
+    background-color: #0054a6;
+}
+
+.event--details .event--registration--btn:hover {
+    background-color: #00a600;
+    text-decoration: underline;
+}
+
+.reg--link {
+    text-align: center;
+    padding: 15px 5px;
+}
+.event--details .event--registration--btn a{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: #fff;
+    display: block;
+}
+
+.event--content {
+    clear: left;
+}
+
+.calendar--date, .clock--time {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 800px) {
+    
+    .event--flyer--container {
+        float: left;
+        width: 100%;
+    }
+
+    .event--content {
+        border: solid 1px #dadada;
+        margin-top: 20px;
+    }
+    
+    .event--content h1 {
+        padding: 5px;
+        font-family: "Roboto",sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: #0054a6;
+    }
+
+    .event--content p {
+        padding: 5px;
+        font-family: "Montserrat",sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .event--content ol{
+        font-size: 31rem;
+        color: red;
+    }
+
+    .event--details {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .event--details .logo--adfiap ,.logo--idf{
+        display: inline-block;
+        width: 26%;
+        margin-top: 20px;
+    }
+
+    .event--details .logo--adfiap img, .logo--idf img {
+        width: 90%;
+    }
+
+}
+
+.upcoming--events--sidebar {
+    float: right;
+    width: 300px;
+    height: auto;
+    margin-top: 30px;
+    border: solid 1px #dadada;
+}
+
+.upcoming--events--sidebar h1 {
+    color: #0054a6 ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding: 20px 0px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.events--sidebar {
+    width: 250px;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+    border: solid 1px #dadada;
+    padding: 10px;
+    
+}
+
+.feature--image--sidebar img {
+    width: 190px;
+    height: 110px;
+}
+
+.feature--image--sidebar h4 {
+    width: 80%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.feature--image--sidebar h4 a:hover{
+    color:#00a600;
+}
+
+.feature--image--sidebar p {
+    width: 80%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+@media (max-width:1395px) {
+    .upcoming--events--sidebar {
+        float: right;
+        width: 20%;
+        height: auto;
+        margin-top: 30px;
+        border: solid 1px #dadada;
+    }
+    
+    .upcoming--events--sidebar h1 {
+        color: #0054a6 ;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.2rem;
+        font-weight: bold;
+        padding: 20px 0px 10px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .events--sidebar {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        border: solid 1px #dadada;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .feature--image--sidebar img {
+        width: 90%;
+        height: 20%;
+    }
+    
+    .feature--image--sidebar h4 {
+        width: 90%;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: left;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .upcoming--events--sidebar {
+        width: 100%;
+    }
+
+    .upcoming--events--sidebar h1 {
+        text-align: center;
+    }
+
+    .events--sidebar {
+        width: 90%;
+        height: 180px;
+        margin: 20px auto;
+        border: solid 1px #dadada;
+        padding: 10px;
+        
+    }
+
+    .feature--image--sidebar img {
+        width: 150px;
+        height: 100px;
+        float: left;
+        margin: 0px 15px;
+    }
+
+    .feature--image--sidebar h4 {
+        width: 70%;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: left;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .feature--image--sidebar p {
+        width: 80%;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 30px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .upcoming--events--sidebar {
+        width: 100%;
+    }
+
+    .upcoming--events--sidebar h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .events--sidebar {
+        margin: 0 auto 10px;
+        width: 80%;
+        height: inherit;
+        text-align: center;
+    }
+
+    .feature--image--sidebar img {
+        width: 80%;
+        padding-bottom: 10px;
+    }
+
+    .feature--image--sidebar h4 {
+        width: 80%;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .feature--image--sidebar p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+
+/***About us Section***/
+
+.about--us--container {
+    height: 90vh;
+    /* background-image: url('../images/About us img.jpg');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: right;
+    background-blend-mode: lighten; */
+}
+
+.container .page--title {
+    padding: 70px 0;
+}
+
+.container .page--title h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #0054a6;
+}
+
+.about--us--logo {
+    float: left;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+}
+
+.about--us--logo img {
+    width: 350px;
+    position: relative;
+    left: 0px;
+    top: 70px;
+    padding: 30px;
+    border: solid 1px #dadada;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 100px;
+}
+
+.about--us--text {
+    float: left;
+    width: 500px;
+}
+
+.about--us--text h2 {
+    font-family: "Roboto",sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0054a6;
+}
+
+.about--us--text p {
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.about--us--banner--container {
+    height: 80vh;
+    padding: 100px;
+}
+
+.about--us--banner {
+    clear: both;
+    float: right;
+    width: 500px;
+    text-align: center;
+}
+
+.about--us--banner img {
+    width: 400px;
+    position: relative;
+    top: 20px;
+}
+
+.about--us--capabilities {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.idf--mission, .idf--mgt, .idf--faculty {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.about--us--capabilities .idf--mission h2,
+.about--us--capabilities .idf--mgt h2,
+.about--us--capabilities .idf--faculty h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #0054a6;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.about--us--capabilities .idf--mission a,
+.about--us--capabilities .idf--mgt a,
+.about--us--capabilities .idf--faculty a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.about--us--capabilities .idf--mission h2:hover,
+.about--us--capabilities .idf--mgt h2:hover,
+.about--us--capabilities .idf--faculty h2:hover{
+    color: #fff;
+    background-color: #00a600;
+    
+}
+
+#idf--mission-content,
+#idf--mgt-content,
+#idf--faculty-content{
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+#idf--mission--content, #idf--mgt--content, #idf--faculty--content {
+    display: none;
 }
