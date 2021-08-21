@@ -53,6 +53,7 @@ a {
 
 .header{
     border-bottom: 1px solid #E2E8F0;
+    background-color: #fff;
 }
 
 .navbar {
@@ -244,7 +245,7 @@ a {
 
     .banner--content .welcome {
         font-family: 'Roboto', sans-serif;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .banner--content h1 {
@@ -507,6 +508,21 @@ a {
     padding: 20px;
 }
 
+.test--item .fas {
+    color: #0054a6;
+    padding-bottom: 10px;
+}
+
+.test--item a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px 150px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #0054a6;
+}
+
 .test--item img {
     width: 80px;
     height: 80px;
@@ -528,6 +544,12 @@ a {
 }
 
 @media (max-width:670px) {
+    .test--item a {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
     .test--text {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
@@ -567,10 +589,10 @@ a {
 /**ONLINE Cources**/
 
 .card {
-    margin: 20px 10px 0px;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin: 20px auto;
     text-align: center;
+    overflow: hidden;
+    width: 300px;
 }
 
 .card:hover {
@@ -578,9 +600,7 @@ a {
     transition: .5s;
 }
 
-.card-body p {
-    font-size: 1.5rem;
-}
+
 
 .course--lesson {
     font-family: 'Montserrat', sans-serif;
@@ -590,17 +610,34 @@ a {
 }
 
 .card img {
-    width: 100%;
+    width: 300px;
+    height: 200px;
+}
+
+.card-body p {
+    font-size: 1.5rem;
+}
+
+.card-body img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.card-body p {
+    padding-bottom: 10px;
 }
 
 .card-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
 }
 
 .card-title a {
     text-decoration: none;
+    color: #222;
 }
 
 .card-title a:hover {
@@ -852,6 +889,14 @@ form .subscribe--btn:hover{
 
 .event--flyer--container img {
     width: 100%;
+}
+
+.event--flyer h1 {
+    font-family: "Roboto",sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #0054a6;
+    padding-bottom: 10px;
 }
 
 .event--content {
@@ -1216,142 +1261,216 @@ form .subscribe--btn:hover{
 
 /***About us Section***/
 
-.about--us--container {
-    height: 90vh;
-    /* background-image: url('../images/About us img.jpg');
-    background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: right;
-    background-blend-mode: lighten; */
-}
-
-.container .page--title {
-    padding: 70px 0;
-}
-
-.container .page--title h1{
-    font-family: "Roboto", sans-serif;
-    font-size: 4rem;
-    font-weight: 900;
-    letter-spacing: 1px;
-    color: #0054a6;
-}
-
-.about--us--logo {
-    float: left;
-    width: 50%;
-    height: 300px;
+.page--title--container {
+    background: linear-gradient(79deg, rgba(2,0,36,1) 0%, rgba(0,76,166,1) 61%, rgba(4,101,69,1) 100%);
+    height: auto;
+    padding: 10px 50px;
     text-align: center;
+    overflow: hidden;
 }
 
-.about--us--logo img {
-    width: 350px;
-    position: relative;
-    left: 0px;
-    top: 70px;
-    padding: 30px;
-    border: solid 1px #dadada;
+.page--title--container h1 {
+    color: #fff;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    width: 600px;
+    padding: 30px 200px 0px 0px;
+    margin-right: 300px;
+}
+
+.page--title--container img {
+    width: 400px;
+    display: inline-block;
+}
+
+.about--us--container {
+    text-align: center;
+    margin: 100px 0;
+    height: 400px;
+}
+
+.about--us--logo--container img {
+    width: 300px;
+    padding: 20px;
+    border: solid 1px #E4E4E4;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 100px;
 }
 
-.about--us--text {
+.about--us--logo--container {
     float: left;
-    width: 500px;
+    width: 50%;
+    margin-top: 50px;
 }
 
-.about--us--text h2 {
-    font-family: "Roboto",sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #0054a6;
-}
-
-.about--us--text p {
-    font-family: "Montserrat",sans-serif;
-    font-size: 1.7rem;
-    margin-top: 20px;
-    line-height: 1.8;
-}
-
-.about--us--banner--container {
-    height: 80vh;
-    padding: 100px;
-}
-
-.about--us--banner {
-    clear: both;
+.about--us--content{
+    width: 50%;
     float: right;
-    width: 500px;
+    margin-top: 50px;
+}
+
+
+.about--us--content h1{
+    color: #0054a6;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.about--us--content p{
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+.what--we--do {
+    background-color: #E4E4E4;
+    height: auto;
+    clear: both;
     text-align: center;
 }
 
-.about--us--banner img {
+.about--us--text--2--img {
+    display: inline-block;
+    width: 400px;
+}
+
+.about--us--text--2{
+    display: inline-block;
+    width: 600px;
+    margin: 200px 200px 100px 0px;
+}
+
+.about--us--text--2--img img {
     width: 400px;
     position: relative;
-    top: 20px;
+    top: -110px;
 }
 
-.about--us--capabilities {
-    clear: both;
-    text-align: center;
-    width: 100%;
-    margin-top: 100px;
+.about--us--text--2 h1 {
+    color: #0054a6;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
-.idf--mission, .idf--mgt, .idf--faculty {
-    width: 300px;
+.about--us--text--2 p{
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+
+.about--mmf {
     height: auto;
-    display: inline-block;
-    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about--mmf .its--mission, .about--mmf .its--management, .about--mmf .its--faculty {
+    width: 400px;
+    margin: 100px 20px;
+}
+
+.about--mmf .its--mission h1, .about--mmf .its--management h1, .about--mmf .its--faculty h1 {
+    color: #0054a6;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.about--mmf .its--mission p, .about--mmf .its--management p, .about--mmf .its--faculty p {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+
+.about--us--the--event {
+    height: auto;
+}
+
+.about--us--the--event h1 {
+    padding: 50px 0px;
     text-align: center;
+    color: #0054a6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.about--us--the--event .row {
+    margin: 0px 50px;
+}
+
+.about--us--the--event .row .col-lg-6 {
+    text-align: center;
+}
+
+.about--us--the--event .row .col-lg-6 img {
+    width: 500px;
+    padding: 50px 0px;
+    overflow: hidden;
+}
+
+.about--us--the--event .row .col-lg-6 p{
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
     line-height: 1.5;
 }
 
-.about--us--capabilities .idf--mission h2,
-.about--us--capabilities .idf--mgt h2,
-.about--us--capabilities .idf--faculty h2{
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+.about--us--the--TPA {
+    height: 600px;
+    background-color: #e4e4e4;
+    margin-top: 100px;
+}
+
+.about--us--the--TPA h1 {
+    padding: 50px 0px;
+    text-align: center;
+    color: #0054a6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;   
+}
+
+.about--us--the--TPA .about--tpa--content {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5; 
+}
+
+/**All Event listing**/
+
+.card-body .event--title {
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    color: #fff;
-    background-color: #0054a6;
-    padding: 10px 15px;
-    border-radius: 50px;
-    cursor: pointer;
+    color: #0054a6;
+    font-weight: 700;
 }
 
-.about--us--capabilities .idf--mission a,
-.about--us--capabilities .idf--mgt a,
-.about--us--capabilities .idf--faculty a{
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 50px;
-    text-decoration: none;
+.card-body span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
 }
 
-.about--us--capabilities .idf--mission h2:hover,
-.about--us--capabilities .idf--mgt h2:hover,
-.about--us--capabilities .idf--faculty h2:hover{
-    color: #fff;
-    background-color: #00a600;
-    
+.shadow-sm:hover {
+    box-shadow: 3px 5px 4px #dadada;;
+    transition: .5s;
 }
 
-#idf--mission-content,
-#idf--mgt-content,
-#idf--faculty-content{
-    font-family: "Montserrat",sans-serif;
-    font-size: 1.7rem;
-    margin-top: 20px;
-    line-height: 1.8;
-    color: #fff;
-}
-
-#idf--mission--content, #idf--mgt--content, #idf--faculty--content {
-    display: none;
+.all--event--container, .all--courses--container {
+    margin-top: 30px;
 }
