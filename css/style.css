@@ -1977,3 +1977,55 @@ form .subscribe--btn:hover{
     }
     
 }
+
+/***News Section***/
+.all--news--container {
+    margin-top: 50px;
+}
+
+.all--news--container .row {
+    margin-top: 50px;
+}
+
+.all--news--container .row .col .row {
+    margin-top: 20px;
+}
+
+.all--news--container .row .col span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+.all--news--container .row .col .row .col img {
+    width: 200px;
+}
+
+.all--news--container .row .col .row .col p {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+
+.all--news--container .row .col .row .col .news--rd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #0054a6;
+    width: 120px;
+    margin: 30px 0;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.all--news--container .row .col .row .col .news--rd:hover {
+    background-color: #00a600 ;
+    transition: .5s;
+}
+
+.all--news--container .row .col .row .col .news--rd a{
+    color: #fff;
+    text-decoration: none;
+}
+
