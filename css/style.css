@@ -2033,3 +2033,6 @@ form .subscribe--btn:hover{
     text-decoration: none;
 }
 
+.actived--menu {
+    color: #00a600;
+}
