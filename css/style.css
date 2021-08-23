@@ -351,6 +351,10 @@ a {
     margin: 0 20px;
 }
 
+.event--content--text a{
+    color: #0054a6;
+}
+
 .event--content--text h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
@@ -704,6 +708,7 @@ a {
 .footer--container {
     height:50%;
     background-color: #222;
+    clear: both;
 }
 
 .container .footer {
@@ -1093,8 +1098,13 @@ form .subscribe--btn:hover{
     margin: 20px auto;
     text-align: center;
     border: solid 1px #dadada;
-    padding: 10px;
-    
+    padding: 10px;   
+}
+
+.events--sidebar a {
+    color: #0054a6;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 .feature--image--sidebar img {
@@ -1467,7 +1477,7 @@ form .subscribe--btn:hover{
     transition: .5s;
 }
 
-.all--event--container, .all--courses--container {
+.all--event--container, .all--courses--container, .container .row .test--card--container, .all--news--container .row {
     margin-top: 30px;
 }
 
@@ -1979,13 +1989,7 @@ form .subscribe--btn:hover{
 }
 
 /***News Section***/
-.all--news--container {
-    margin-top: 50px;
-}
 
-.all--news--container .row {
-    margin-top: 50px;
-}
 
 .all--news--container .row .col .row {
     margin-top: 20px;
