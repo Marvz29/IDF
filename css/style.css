@@ -5,6 +5,62 @@
     box-sizing: border-box;
 }
 
+.adfiap--site--btn {
+    background-color: #0054A6;
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    padding-left: 10px;
+    position: relative;
+    right: -100px;
+}
+
+.adfiap--site--btn:hover {
+    background-color: #436E11;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.adfiap--site--btn .adfiap--btn--content{
+    list-style: none;
+    display: inline-block;
+}
+
+.adfiap--site--btn .adfiap--btn--content p{
+    padding: 5px 0px 0px 5px;
+    color: #fff;
+    display: block;
+    width: 50px;
+    line-height: 1;
+}
+
+.adfiap--site--btn a{
+    color: #fff;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+.adfiap--site--btn i{
+    display: inline-block;
+    text-align: center;
+    padding: 10px 5px 10px 0px;
+    color: #fff;
+}
+
+.fixed-middle {
+    position: fixed;
+    right: 10;
+    bottom: 30px;
+    z-index: 1030;
+    transition: 0.5s ease-out;
+}
+
+.fixed-middle:hover {
+    right: 0;
+}
+
 .title {
     color: #0054a6 ;
     font-family: 'Roboto', sans-serif;
